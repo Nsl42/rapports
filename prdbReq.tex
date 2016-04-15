@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\title{Complete Docummentation \\ BISMMv2}
+\author{Anas Alaoui M'Darhri
+}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\section*{Global Overview}
+The BISMMv2 Interface is designed to be a front-end for all the bioinformatic tools developped at the Université de Montpellier.
+\section{Install, Use and Maintain}
+\subsection{Install}
+
+ \paragraph{Get the source !} 
+
+The source code is available on the Renater git repository, at this adresss : https://git.renater.fr/bismm.git; \\
+To download it, simply use the following command : \\
+ \begin{center}$\textit{git clone  https://git.renater.fr/bismm.git}.$\end{center}
+\section{Server Configuration}\label{previous work}
+\subsection{Apache2 Configuration}\label{previous work}
+Disable Directory Access
+\subsection{SGBDs Configuration}\label{previous work}
+\paragraph{PostGreSQL}
+
+Postgre user : postgres\\
+Postgre mdp : kajavacrbm
+\paragraph{MySQL}
+
+\section{PHP Modules}\label{results}
+
+\section{Application Requirements}\label{conclusions}
+\subsection*{BISMMv2 Interface}
+\subsection*{PRDB}
+\begin{itemize}
+\item PHP Module for PostgreSQL accesss : \textit{pdo\_pgsql} 
+\item Configure PHP for short-opening-tags, and <?= syntactic sugars
+\item Configure the postgres access : All of it is in the classfile /class/pgsql.php
+\item Extend the memory limit in php configuration to a maximum of 512M
+\end{itemize}
+\end{document}
+  
